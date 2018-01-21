@@ -852,3 +852,8 @@
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
+
+% Stolen from https://github.com/deedy/Deedy-Resume
+\newenvironment{tightemize}{\vspace{-\topsep}\begin{itemize}\itemsep1pt \parskip0pt \parsep0pt}{\end{itemize}\vspace{-\topsep}}
+
+\newenvironment{tightemizenoindent}{\vspace{-\topsep}\begin{itemize}[leftmargin=*]\itemsep1pt \parskip0pt \parsep0pt}{\end{itemize}\vspace{-\topsep}}

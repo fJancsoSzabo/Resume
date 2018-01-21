@@ -1,32 +1,41 @@
-% James Pearson Hughes's Resume
+% Felix Jancso-Szabo's Resume
+% URL: https://github.com/fJancsoSzabo/Resume
+% Forked from James Pearson Hughes's resume
 % URL: https://github.com/xiongchiamiov/Resume
-% Forked from Chris Gibson's resume
-% URL: https://github.com/cgibson/Resume
-% Which is in turn based on resume tex file by Kamil Wojcicki
-% URL: http://linux.dsplabs.com.au/resume-writing-example-latex-template-linux-curriculum-vitae-professional-cv-layout-format-text-p54/
-
 \documentclass[margin,line]{resume}
 
+\usepackage{newtxmath}
+\usepackage{newtxtext}
 \usepackage{graphicx}
+\usepackage{siunitx}
+\usepackage{enumitem}
 
 \begin{document}
 
-\name{\huge \sc{James Pearson Hughes}\vspace{2mm}}
+\name{\huge \sc{Felix Jancso-Szabo}\vspace{2mm}}
 {
-    \hfill hireme@mail.changedmy.name       \vspace{0mm}\\\vspace{0mm}%
-    \hfill https://changedmy.name           \vspace{0mm}\\\vspace{0mm}%
-    \hfill https://github.com/xiongchiamiov \vspace{0mm}\\\vspace{-9mm}%
+    \hfill 3A Computer Engineering \vspace{0mm} \\\vspace{0mm}
+    \hfill felix.ajs@gmail.com       \vspace{0mm}\\\vspace{0mm}
+    \hfill https://github.com/fJancsoSzabo \vspace{0mm}\\\vspace{-9mm}
 }
 
 \begin{resume}
-
-    \vspace{-3mm}
 
     %__________________________________________________________________________________________________________________
     % Summary
     \section{\mysidestyle \textbf{\large{S}\small{UMMARY}}}
 
-    \textbf{\textsl{Site Reliability Engineer}} particularly interested in \textbf{failure analysis}, \textbf{security}, and \textbf{performance}, and, most importantly, the \textbf{human aspect} of each of these.  Obsessed with high-quality technical documentation.  Prolific open-sourcer with over 150 Github repos and patches accepted into over 40 projects.  Author and maintainer of 9 git/Github tools, 11 RubyGems, 9 Python packages.  Top 0.5\% user on Stack Overflow, Server Fault, and Information Security Stack Exchange.
+    \begin{tightemizenoindent}
+    \item Four months and over 5000 lines of \textbf{Go} experience from developing a test framework at Reebee.
+    \item Over eight months of \textbf{Python} experience through personal projects and use at multiple jobs.
+    \item Two years of \textbf{C} experience, including over eight months of \textbf{bare metal C} experience gained from academic and professional work.
+    \item Used \textbf{Postman} for API testing and development.
+    \item Four month's experience using \textbf{CircleCI} for testing and deployment at Reebee.
+    \item Over two years of experience with \textbf{git} through personal, professional and academic use.
+    \item \textbf{Subversion} and \textbf{CVS} experience through academic and professional usage, respectively.
+    \item Experience using \textbf{Goland}, \textbf{Keil \pmb{\si\micro}Vision}, \textbf{Eclipse}, as well as text editors and command line tools to develop and debug a variety of languages.
+    \item Worked on teams using Agile development, using \textbf{Pivotal} and \textbf{Jira} to track issues.
+    \end{tightemizenoindent}
 
     \vspace{-1mm}
 
@@ -34,73 +43,80 @@
 
     %__________________________________________________________________________________________________________________
     % Professional Experience
-    \section{\mysidestyle \textbf{\large{P}\small{ROFESSIONAL} \large{E}\small{XPERIENCE}}}
+    \section{\mysidestyle \textbf{\large{W}\small{ORK}\\ \large{E}\small{XPERIENCE}}}
 
-    % *ahem*
-    \textbf{\listing Stealth Startup} \vspace{2mm}\\\vspace{1mm}%
-    \textsl{DevOps Engineer} \hfill \textbf{December 2015 -- present}\\
-    Introduce operations practices and tools into a rapidly growing company.\\
-    Work on a wide range of tasks, including web development (Flask, Pyramid, custom C++, custom Python), build systems (Bazel), an in-house deploy application, operations for several dozen applications, network security, AWS user support, software documentation, and organization-wide standards.
+    % Reebee
+    \textbf{\listing Reebee} \vspace{2mm}\\\vspace{1mm}%
+    \textsl{Test Automation Developer / Backend Developer} \hfill \textbf{September 2017 -- December 2017}\\
+    Designed testing framework and increased CI usage at a digital flyer startup.\\
+    \begin{tightemize}
+    \item Created a server-based testing framework to perform integration testing of the Reebee API, based off of JSON specifications.
+    \item Created a tool to generate ORM model files for PHP and Go.
+    \item Implemented new API endpoints to allow automated creation of client profiles.
+    \end{tightemize}
 
-    % reddit
-    \textbf{\listing reddit, Inc.} \vspace{2mm}\\\vspace{1mm}%
-    \textsl{Software Engineer} \hfill \textbf{August 2014 -- December 2015}\\
-    One of half a dozen engineers responsible for user-facing features on reddit.com, a site with over 200 million monthly active users.\\
-    Fixed many bugs and annoyances that had been present for years.\\
-    Built relationships with third-party add-on developers and community moderators.\\
-    Implemented an A/B testing framework, a new comment sort and display algorithm, one of the most well-received features in site history (non-silent sidewide bans), and an expanded image preview system used by mobile web and third-party apps.\\
-    Constantly refactored, documented, and added tests.\\
-    Most work available for perusal at https://github.com/reddit/reddit .
+    \vspace{1mm}
+    % Clear Blue Technologies
+    \textbf{\listing Clear Blue Technologies} \vspace{2mm}\\\vspace{1mm}%
+    \textsl{Senior Software Developer} \hfill \textbf{January 2017 -- April 2017}\\
+    Designed power management firmware for smart off-grid power controllers. \\
+    \begin{tightemize}
+    \item Designed a highly configurable module to allow a power supply to be used as a backup energy source.
+    \item Co-designed a robust dimming module to prevent flickering in aging and poorly made street lamps.
+    \item Produced and maintained comprehensive flowcharts to document algorithms.
+    \item Collaborated with multiple teams to isolate and fix reported bugs.
+    \end{tightemize}
 
-    % iFixit
-    \textbf{\listing iFixit} \vspace{2mm}\\\vspace{1mm}%
-    \textsl{Web Operations Lead Engineer} \hfill \textbf{June 2012 -- August 2014}\\
-    \textsl{DevOps Engineering Intern} \hfill \textbf{March 2011 -- June 2012}\\
-    Implemented caching system that prevents previously-frequent media-induced downtimes.\\
-    Implemented and champion application monitoring, leading to improvements in performance, stability, and user experience.\\
-    Wrote alerting system that gives developers direct access to failure reports.\\
-    Kickstarted thriving internal high-level documentation project.\\
-    Improved startup time of application servers from 15 minutes with 25\% failures to \textless5 minutes with no failures.
+    \vspace{1mm}
+    % ON Semi
+    \textbf{\listing ON Semiconductor} \vspace{2mm}\\\vspace{1mm}%
+    \textsl{Embedded Firmware Developer} \hfill \textbf{May 2016 -- August 2016}\\
+    Implemented interfacing and communication algorithms for hearing aids for the medical devision of a Fortune 1000 semiconductor company. \\
+    \begin{tightemize}
+    \item Co-designed a Bluetooth Low Energy based protocol to allow wireless configuration of the products.
+    \item Extended the hearing aid bootloader to allow firmware updates of all on-board chips.
+    \item Refactored bootloader scripts to achieve a 200\% speed increase.
+    \item Isolated and patched the source of bus errors using oscilloscopes.\\
+    \end{tightemize}
 
-    % XYZ Textbooks
-    \textbf{\listing XYZ Textbooks} \vspace{2mm}\\\vspace{1mm}%
-    \textsl{Web Programmer / Sysadmin} \hfill \textbf{June 2008 -- March 2011}
-
-    % Cal Poly
-    \textbf{\listing Cal Poly} \vspace{2mm}\\\vspace{1mm}%
-    \textsl{Web Developer} \hfill \textbf{July 2008 -- November 2008}
-
+\vspace{-1mm}
 \sectionline
 
     %__________________________________________________________________________________________________________________
     % Education
     \section{\mysidestyle \textbf{\large{E}\small{DUCATION}}}
 
-    \textbf{\listing California Polytechnic University}, San Luis Obispo, California \vspace{1mm}\\
-    \textsl{B.S of Software Engineering} \hfill \textbf{September 2007 -- May 2012}\vspace{-3mm}\\\vspace{-1mm}%
-
-    \textbf{\listing Coursera / Johns Hopkins} \vspace{1mm}\\
-    \textsl{Computing for Data Analysis} -- 99\% with distinction \hfill \textbf{January 2014 -- February 2014}\vspace{-3mm}\\\vspace{-1mm}%
-
-    \vspace{-1mm}
+    \textbf{\listing University of Waterloo}, Waterloo, Ontario\vspace{1mm}\\
+    \textsl{B.A.Sc of Computer Engineering} \hfill \textbf{September 2015 -- April 2020 (projected)}\vspace{-3mm}\\\vspace{-1mm}%
 
 \sectionline
 
     %__________________________________________________________________________________________________________________
-    % Skills / Keywords
-    \section{\mysidestyle \textbf{\large{S}\small{KILLS} / \large{K}\small{EYWORDS}}}
+    % Personal Projects
+    \section{\mysidestyle \textbf{\large{P}\small{ERSONAL}\\ \large{P}\small{ROJECTS}}}
 
-    \textbf{Linux:} Red Hat family (CentOS), Arch Linux, Debian family (Ubuntu, Debian)\\
-    \textbf{Monitoring/Alerting:} Graphite, StatsD, Alertinator, Diamond, pipe-to-graphite, collectd\\
-    \textbf{Scripting:} Bash and utils (sed, awk, grep), Python, Ruby\\
-    \textbf{Backend:} Python (Django, Flask, Pyramid), PHP (Symfony, custom), Ruby (Sinatra)\\
-    \textbf{Frontend:} HTML, CSS and Less, Javascript (jQuery, MooTools)\\
-    \textbf{Databases:} MySQL, PostgreSQL, SQLite, Cassandra\\
-    \textbf{Web Application servers/proxies:} Varnish, Apache, HAProxy, Nginx, Tomcat, Cherokee, uWSGI\\
-    \textbf{Version control systems:} Git, Mercurial, Subversion\\
-    \textbf{Misc:} Amazon Web Services (EC2, S3, CloudFront), Docker, Ansible, Gearman, beanstalkd
+    \textbf{\listing Waterloo Engineering Society} \vspace{2mm}\\\vspace{1mm}%
+    \textsl{Website Director} \hfill \textbf{September 2017 -- Present}\\
+    Maintained and improved the Waterloo Engineering Society Website. \\
+    \begin{tightemize}
+    \item Rebuilt the website from the ground up, including an overhaul of the content.
+    \end{tightemize}
 
+    \textbf{\listing Boolean Algebra System} \vspace{2mm}\\\vspace{1mm}%
+    \textsl{Developer}\\
+    Built a system to:\\
+    \begin{tightemize}
+    \item Parse boolean expressions and generate their truth tables.
+    \item Simplify boolean expressions using the Quine-McCluskey algorithm.
+    \end{tightemize}
 
+\sectionline
+
+    %__________________________________________________________________________________________________________________
+    % Interests / Hobbies
+    \section{\mysidestyle \textbf{\large{I}\small{NTERESTS  / \\ \large{H}\small{OBBIES}}}}
+
+    \textsl{Euchre, Swimming, Cycling, Engineering Student Lounge \& Student Store Manager}\\
 
 \end{resume}
 \end{document}
